@@ -1,0 +1,28 @@
+{# templates/programmationslist.html.twig #}
+
+{% extends "baselayout.html.twig" %}
+
+{% block title %}{{ parent() }} Nos loisirs sportifs {% endblock %}
+
+{% block body %}
+<section class="dark_section container-list" >
+    <h1 style="text-align: center; color:white;"> Le Bureau</h1>
+    <img src="http://localhost/agvoyapp/templates/img/organigramme.png"  />
+</section>
+<section style="padding: 170px 0px;">
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 100px;"> Nos partenaires</h1>
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-4">
+                <img style="max-width:100%;height:250px" src="https://publidata-prod.s3.amazonaws.com/production/images/images/000/018/815/original/logo-institutionnel.png?1491311585" />
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+                <img style="max-width:100%;height:250px" src="https://dwpt1kkww6vki.cloudfront.net/img/logo/courcouronnes.png" />
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-4">
+                <img style="max-width:100%;height:250px" src="http://www.mairie-athis-mons.fr/annuaire/logo_association_238.jpg" />
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %} {# body #}

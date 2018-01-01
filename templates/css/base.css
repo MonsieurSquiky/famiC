@@ -1,0 +1,213 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+body {
+  font-size: 20px; }
+
+.navbar {
+  min-height: 80px;
+  margin-bottom: 0px;
+  font-size: 26px;
+  line-height: 20px; }
+
+.navbar-nav > li > a {
+  padding: 30px;
+  padding-left: 45px;
+  padding-right: 45px; }
+
+.navbar-brand {
+  height: 80px;
+  padding: 30px;
+  font-size: 26px;
+  line-height: 20px; }
+
+.block-fullscreen-top {
+  width: 100%;
+  height: -webkit-calc(100vh - 80px);
+  height: -moz-calc(100vh - 80px);
+  height: calc(100vh - 80px);
+  min-height: 500px;
+  overflow: hidden; }
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: white;
+  padding: 30px; }
+
+.carousel-text {
+  position: absolute;
+  max-width: 400px;
+  margin-top: calc(50vh - 80px);
+  /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+  /* tiré de la moitié de sa propre hauteur */
+  margin-left: 20vw; }
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 36px; }
+
+.letter {
+  line-height: 36px;
+  background-color: #F2F1EF; }
+
+.full-pic {
+  min-width: 100vw;
+  min-height: 90vh; }
+
+.offers {
+  padding-top: 7vh;
+  padding-bottom: 7vh; }
+
+.block-breezing {
+  padding-top: 10vh;
+  padding-bottom: 10vh; }
+
+.category-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px; }
+
+.category-label {
+  width: 100%;
+  height: 250px;
+  border-radius: 30px;
+  overflow: hidden; }
+
+.background-transparent {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  opacity: 0.8;
+  overflow: hidden; }
+
+.background-transparent img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%; }
+
+.offer-category {
+  text-align: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh; }
+
+.text-partial {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.label-green {
+  background-color: #1E824C !important; }
+
+.label-orange {
+  background-color: #EB9532 !important; }
+
+.tab-green {
+  color: #27ae60 !important; }
+
+.tab-orange {
+  color: #d35400 !important; }
+
+.tab-blue {
+  color: #2c3e50 !important; }
+
+.tab-red {
+  color: #c0392b !important; }
+
+.tab-purple {
+  color: #8e44ad; }
+
+.carousel-inner > img {
+  opacity: 0.8; }
+
+.voyage {
+  display: flex;
+  background-image: url("http://localhost/agvoyapp/templates/img/vietnam.jpg");
+  background-size: cover;
+  min-height: 900px;
+  min-width: 100vw;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px); }
+
+.blackveil {
+  position: absolute;
+  min-height: 900px;
+  min-width: 100vw;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 999; }
+
+.postcard {
+  position: absolute;
+  min-height: 700px;
+  min-width: 60vw;
+  margin: 100px 20vw;
+  border: 10px solid white;
+  background-image: url("http://localhost/agvoyapp/templates/img/vietnam.jpg");
+  background-size: cover;
+  z-index: 9999; }
+
+.postcard-text {
+  position: absolute;
+  max-width: 400px;
+  margin-top: 150px;
+  margin-left: 12%; }
+
+.dateband {
+  color: #c0392b;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #c0392b;
+  font-size: 22px;
+  font-weight: bold; }
+
+.event-details {
+  width: 90%;
+  height: 300px;
+  font-size: 18px;
+  font-weight: bold; }
+
+.agenda {
+  position: relative;
+  width: 800px;
+  min-height: 500px;
+  margin: auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75); }
+
+.container-list {
+  background-color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 15px 0px; }
+
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 1000px;
+  margin: 15px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px; }
+
+/*# sourceMappingURL=base.css.map */

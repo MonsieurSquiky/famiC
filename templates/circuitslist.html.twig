@@ -1,0 +1,220 @@
+{# templates/circuitslist.html.twig #}
+
+{% extends "baselayout.html.twig" %}
+
+{% block title %}{{ parent() }} - Circuits list{% endblock %}
+
+{% block body %}
+<div id="myCarousel" class="carousel slide block-fullscreen-top" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+        <div class="jumbotron carousel-text">
+            <h2> Assemblee Generale</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros vitae purus blandit bibendum at tincidunt urna.
+            </p>
+        </div>
+      <img class="full-pic" src="http://localhost/agvoyapp/templates/img/AGpic.JPG" >
+
+    </div>
+
+    <div class="item">
+        <div class="jumbotron carousel-text">
+            <h2> Bourse aux vetements</h2>
+            <p>
+                Ne ratez pas notre Bourse aux vetements où vous trouverez sans aucun doute votre bonheur pour parmi
+                les trésors vestimentaires de nos adhérents.
+            </p>
+        </div>
+      <img class="full-pic" src="http://localhost/agvoyapp/templates/img/bourse.jpg" alt="Bourse aux vetements">
+    </div>
+
+
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<section class="letter block-breezing">
+    <h1 class="section-title"> Le mot de la presidente</h1>
+    <div class="container main-block">
+
+        <p class="">
+            Notre Association participe depuis plus de 45 ans à la vie de notre ville.
+            Elle compte aujourd'hui environ 750 familles dont la motivation est de se connaître,
+            de se divertir, échanger autour d'un programme culturel, sportif et social.
+
+                Notre Association des Familles est animée par de nombreux bénévoles
+            qui ont à cœur de préserver l'esprit de quartier, la qualité de vie dans leur ville et le bien vivre ensemble.
+            C’est à partir d’un intérêt, d’une motivation individuelle, que les bénévoles choisissent de s’investir dans un projet collectif.
+            <div id="hidden-text" class="text-partial" >
+            Ainsi, notre association essaye de répondre à ces objectifs en :
+            favorisant la rencontre entre amateurs et professionnels, de sorte que la culture,
+            le sport et le social soient la chose commune de tous, notamment par le développement des pratiques associatives et citoyennes.
+            proposant un programme d’actions variées en collaboration avec la ville, l'Agglomération Grand Paris Sud,
+            les diverses associations de la commune ainsi que les associations familiales partenaires.
+            Il est vrai qu'il y a de quoi trouver son bonheur au sein de notre association
+            qui propose de nombreuses activités sportives, ludiques, festives et culturelles,
+            de la bourse aux vide greniers, de la gym à l'escalade, des parties de scrabbles
+            aux ateliers de cuisine sans oublier les sorties et les voyages...
+            notre association multiplie les rencontres et les échanges au travers de sorties familiales et d’activités hebdomadaires.
+            C’est une programmation à l’année qui aborde tous les genres, à des tarifs raisonnables.
+            Je vous laisse en découvrir l’essence dans ces pages et souhaite vivement vous accueillir bientôt.
+            <br />
+            <p style="text-align:right;font-weight:bold;font-style:italic">
+
+             Jacqueline Hergott </p>
+        </div>
+
+        </p>
+        <div style="text-align:center">
+
+            <button id="showLetter" type="button" class="btn btn-lg btn-default">Lire la suite </button>
+            <button id="" type="button" class="btn btn-lg btn-info"> En savoir plus sur l'association </button>
+
+        </div>
+    </div>
+</section>
+<section class="offers">
+    <div class="container main-block">
+        <div id="loisirs" class="offer-category">
+            <h2 class="category-title"> De nombreux Loisirs</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <a href="http://localhost/agvoyapp/index.php/loisirs">
+                    <div class="category-label label-green">
+                        <div class="background-transparent">
+                            <img alt="Initiation Karate pour enfants" src="http://localhost/agvoyapp/templates/img/patinage.jpg" />
+                        </div>
+                    </div>
+                    </a>
+                    <p>
+                        Loisirs sportifs
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <a href="http://www.sante-sens.com/">
+                        <div class="category-label label-green">
+                            <div class="background-transparent">
+                                <img alt="Activites liees au bien etre " src="http://blog-santeautravail.com/wp-content/uploads/2015/09/Fotolia_70564979_XS.jpg" />
+                            </div>
+                        </div>
+                    </a>
+                    <p>
+                        Loisirs Bien-Etre
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="category-label label-green">
+                        <div class="background-transparent">
+                            <img alt="Arts et creation" src="http://localhost/agvoyapp/templates/img/art_floral.jpg" />
+                        </div>
+
+                    </div>
+                    <p>
+                        Loisirs creatifs
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div  id="solidarite" class="offer-category">
+            <h2 class="category-title"> Les activites solidaires et citoyennes</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="category-label label-orange">
+                        <div class="background-transparent">
+                            <img alt="Theatre avec Monique Meze" src="http://www.canal-iscpa.com/files/2016/10/635924698493447212279032531_theatre9.jpg" />
+                        </div>
+                    </div>
+                    <p>
+                        Theatre avec Monique Meze
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="category-label label-orange">
+                        <div class="background-transparent">
+                            <img alt="Participation au Telethon" src="http://casim29.bzh/wp-content/uploads/2016/11/Logo-T%C3%A9l%C3%A9thon.jpg" />
+                        </div>
+                    </div>
+                    <p>
+                        Participation au Telethon
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="category-label label-orange">
+                        <div class="background-transparent">
+                            <img alt="Partenariat avec l'association Les Bouchons d'Amour" src="https://bouchonsdamour62.files.wordpress.com/2012/05/cropped-header-1.jpg" />
+                        </div>
+
+                    </div>
+                    <p>
+                        Les bouchons d'amour
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="dark_section" style="background-color:#2c3e50;color:white;min-height:100vh; display:flex">
+
+
+    <div class="agenda">
+        <img src="http://localhost/agvoyapp/templates/img/calendar3.png" style="width:100%" />
+        <!-- <div class="dateband">
+            <div class="row">
+                <div class="col-md-9">
+                    Mardi 21 Novembre
+                </div>
+                <div class="col-md-3">
+                    18h-20h
+                </div>
+            </div>
+        </div>
+        <div class="event-details" style="background-size: cover;background-image:url('http://localhost/agvoyapp/templates/img/AGpic.JPG')">
+            <p>
+                Assemblee generale <br />
+                Ferme des Mathurines
+            </p>
+        </div> -->
+    </div>
+
+</section>
+<div class="blackveil">
+
+</div>
+<div class="postcard">
+    <div class="jumbotron postcard-text">
+        <h2> Voyage au Vietnam</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu eros vitae purus blandit bibendum at tincidunt urna.
+        </p>
+        <button type="button" class="btn btn-default">En savoir plus</button>
+    </div>
+</div>
+<section class="voyage">
+
+</section>
+
+
+{% endblock %} {# body #}

@@ -1,0 +1,45 @@
+{# templates/baselayout.html.twig #}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="http://localhost/agvoyapp/templates/css/base.css">
+        <title>{% block title %}FamiCourcouronnes{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            {% block header %}
+            <nav class="navbar navbar-default">
+              <div class="container-fluid header-accessible">
+                <div class="navbar-header">
+                  <a class="navbar-brand active" href="#">Association des familles de Courcouronnes</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li ><a href="#loisirs" class="tab-green">Loisirs</a></li>
+                  <li ><a href="#solidarite" class="tab-orange">Solidarite</a></li>
+                  <li ><a href="#events" class="tab-red">Evenements et Sorties</a></li>
+                  <li ><a href="#voyage" class="tab-blue">Voyages</a></li>
+                </ul>
+              </div>
+            </nav>
+            {% endblock %}
+        </header>
+
+        {% block body %}
+
+        {% endblock %} {# body #}
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#showLetter").click(function() {
+                    $("#hidden-text").attr('class', "");
+                    $("#showLetter").hide();
+                });
+            });
+        </script>
+  </body>
+</html>
